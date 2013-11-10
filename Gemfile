@@ -45,6 +45,7 @@ end
 # gem 'debugger', group: [:development, :test]
 
 gem 'devise'
-gem 'twitter-bootstrap-rails'
-gem 'therubyracer'
+# gem 'twitter-bootstrap-rails'
+# gem 'therubyracer'
 gem 'paperclip', "~> 3.0"
+# gem 'less-rails'
