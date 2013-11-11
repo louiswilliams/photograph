@@ -11,3 +11,9 @@
  *= require_self
  *= require_tree .
  */
+
+.post img {
+    border: 5px solid #888;
+    border-radius: 50px;
+    box-shadow: 1px 1px 25px #888;
+}

@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20131109223252) do
+ActiveRecord::Schema.define(version: 20131110042536) do
 
   create_table "captions", force: true do |t|
     t.integer  "post_id"
@@ -33,6 +33,16 @@ ActiveRecord::Schema.define(version: 20131109223252) do
   end
 
   add_index "images", ["post_id"], name: "index_images_on_post_id"
+
+  create_table "likes", force: true do |t|
+    t.integer  "user_id"
+    t.integer  "post_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "likes", ["post_id"], name: "index_likes_on_post_id"
+  add_index "likes", ["user_id"], name: "index_likes_on_user_id"
 
   create_table "posts", force: true do |t|
     t.integer  "user_id"
